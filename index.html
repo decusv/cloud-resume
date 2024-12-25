@@ -208,7 +208,7 @@
         </a>
       </div>
       <div class="visitor-counter">
-        Visitors: <span id="visitorCount">Loading...</span>
+        Visitors: <span id="visitor-count">Loading...</span>
       </div>
     </div>
 
@@ -234,7 +234,7 @@
       }
 
       async function initVisitorCounter() {
-        const countElement = document.getElementById("visitorCount");
+        const countElement = document.getElementById("visitor-count");
         const count = await updateVisitorCount();
         countElement.textContent = count;
       }
