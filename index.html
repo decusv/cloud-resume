@@ -105,6 +105,12 @@
             transform: scale(1.1);
         }
 
+        .visitor-counter {
+            margin-top: 20px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
         @keyframes flicker {
             to {
                 mask-position: 50% 50%, 0 50%;
@@ -176,9 +182,37 @@
                 <i class="fas fa-file-alt"></i>
             </a>
         </div>
+        <div class="visitor-counter">
+            Visitors: <span id="visitorCount">Loading...</span>
+        </div>
     </div>
 
     <script>
+        const API_URL = 'https://8kvo99fqbb.execute-api.eu-west-2.amazonaws.com/cloud-resume-visitor-counter';
+
+        async function updateVisitorCount() {
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({}),
+                });
+                const data = await response.json();
+                return data.visitorCount;
+            } catch (error) {
+                console.error('Error updating visitor count:', error);
+                return 'Error';
+            }
+        }
+
+        async function initVisitorCounter() {
+            const countElement = document.getElementById('visitorCount');
+            const count = await updateVisitorCount();
+            countElement.textContent = count;
+        }
+
         function downloadCV(event) {
             event.preventDefault();
             // Replace this URL with your actual API endpoint
@@ -198,6 +232,9 @@
                 })
                 .catch(error => console.error('Error downloading CV:', error));
         }
+
+        // Initialize the visitor counter when the page loads
+        window.addEventListener('load', initVisitorCounter);
     </script>
 </body>
 </html>
