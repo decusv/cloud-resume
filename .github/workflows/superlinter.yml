@@ -1,6 +1,11 @@
 name: Lint Code Base
 
 on: push
+
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   run-lint:
     runs-on: ubuntu-latest
