@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -52,9 +52,8 @@
           #4dffbf 288.0000042915344deg,
           hsla(0, 0%, 98%, 1) 1turn
         );
-        mask:
-          radial-gradient(circle at 50% 50%, white 2px, transparent 2.5px) 50%
-            50% / var(--size) var(--size),
+        mask: radial-gradient(circle at 50% 50%, white 2px, transparent 2.5px)
+            50% 50% / var(--size) var(--size),
           url("https://assets.codepen.io/605876/noise-mask.png") 256px 50% /
             256px 256px;
         mask-composite: intersect;
@@ -111,9 +110,7 @@
       .social-links a {
         color: #fff;
         font-size: 1.8em;
-        transition:
-          color 0.3s ease,
-          transform 0.3s ease;
+        transition: color 0.3s ease, transform 0.3s ease;
       }
 
       .social-links a:hover {
@@ -129,9 +126,7 @@
 
       @keyframes flicker {
         to {
-          mask-position:
-            50% 50%,
-            0 50%;
+          mask-position: 50% 50%, 0 50%;
         }
       }
 

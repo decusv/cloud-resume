@@ -4,7 +4,10 @@
   "main": "cypress.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
+    "prepare": "husky",
+    "format": "prettier --write .",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -19,7 +22,14 @@
   },
   "homepage": "https://github.com/decusv/cloud-resume#readme",
   "description": "",
+  "husky": {
+    "hooks": {
+      "pre-commit": "prettier --write . && git add -A ."
+    }
+  },
   "devDependencies": {
-    "husky": "^4.3.8"
+    "cypress": "^13.17.0",
+    "husky": "^4.3.8",
+    "prettier": "^2.8.0"
   }
 }

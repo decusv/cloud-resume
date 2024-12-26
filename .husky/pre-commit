@@ -1,8 +1,0 @@
-# Run Prettier on staged files
-prettier --write .
-
-# Run Flake8 on Python files
-flake8 .
-
-# Add changes back to the staging area
-git add .
