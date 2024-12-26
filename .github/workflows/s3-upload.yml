@@ -5,6 +5,12 @@ on:
     branches:
       - main # Change this to your default branch
 
+
+permissions:
+  contents: read
+  issues: write
+
+
 jobs:
   upload:
     runs-on: ubuntu-latest
