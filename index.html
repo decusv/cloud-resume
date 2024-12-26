@@ -238,9 +238,13 @@
         </a>
       </div>
       <div class="visitor-counter">
-        Unique Visitors: <span id="visitor-count">Loading...</span> <span class="hint">*</span>
+        Unique Visitors: <span id="visitor-count">Loading...</span>
+        <span class="hint">*</span>
       </div>
-      <div class="tooltip">Unique visitors are counted using hashed IP addresses. No personal information is stored.</div>
+      <div class="tooltip">
+        Unique visitors are counted using hashed IP addresses. No personal
+        information is stored.
+      </div>
     </div>
 
     <script>
@@ -293,17 +297,18 @@
       // Initialize the visitor counter when the page loads
       window.addEventListener("load", initVisitorCounter);
 
-      document.querySelector('.hint').addEventListener('click', function() {
-        const tooltip = document.querySelector('.tooltip');
-        tooltip.style.display = tooltip.style.display === 'block' ? 'none' : 'block';
+      document.querySelector(".hint").addEventListener("click", function () {
+        const tooltip = document.querySelector(".tooltip");
+        tooltip.style.display =
+          tooltip.style.display === "block" ? "none" : "block";
       });
 
       // Optional: Hide tooltip when clicking outside
-      document.addEventListener('click', function(event) {
-        const hint = document.querySelector('.hint');
-        const tooltip = document.querySelector('.tooltip');
+      document.addEventListener("click", function (event) {
+        const hint = document.querySelector(".hint");
+        const tooltip = document.querySelector(".tooltip");
         if (!hint.contains(event.target) && !tooltip.contains(event.target)) {
-          tooltip.style.display = 'none';
+          tooltip.style.display = "none";
         }
       });
     </script>
