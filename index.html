@@ -182,6 +182,31 @@
           font-size: 1.3em;
         }
       }
+
+      .hint {
+        cursor: pointer;
+        color: #007bff;
+        position: relative;
+      }
+
+      .tooltip {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        top: 110%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .hint:hover + .tooltip,
+      .hint:focus + .tooltip {
+        display: block;
+      }
     </style>
   </head>
   <body>
@@ -213,8 +238,9 @@
         </a>
       </div>
       <div class="visitor-counter">
-        Visitors: <span id="visitor-count">Loading...</span>
+        Unique Visitors: <span id="visitor-count">Loading...</span> <span class="hint">*</span>
       </div>
+      <div class="tooltip">Unique visitors are counted using hashed identifiers. No personal information is stored.</div>
     </div>
 
     <script>
@@ -266,6 +292,20 @@
 
       // Initialize the visitor counter when the page loads
       window.addEventListener("load", initVisitorCounter);
+
+      document.querySelector('.hint').addEventListener('click', function() {
+        const tooltip = document.querySelector('.tooltip');
+        tooltip.style.display = tooltip.style.display === 'block' ? 'none' : 'block';
+      });
+
+      // Optional: Hide tooltip when clicking outside
+      document.addEventListener('click', function(event) {
+        const hint = document.querySelector('.hint');
+        const tooltip = document.querySelector('.tooltip');
+        if (!hint.contains(event.target) && !tooltip.contains(event.target)) {
+          tooltip.style.display = 'none';
+        }
+      });
     </script>
   </body>
 </html>
