@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
-    "format": "prettier --write .",
+    "format": "prettier --write . && python -m black .",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run"
   },
@@ -24,6 +24,6 @@
   "description": "",
   "devDependencies": {
     "cypress": "^13.17.0",
-    "prettier": "^2.8.0"
+    "prettier": "^2.8.8"
   }
 }
