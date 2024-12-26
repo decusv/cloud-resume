@@ -6,7 +6,7 @@ def lambda_handler(event, context):
     dynamodb = boto3.client('dynamodb')
     
     try:
-        # Update the item to remove the stringset attribute entirely
+        # Update the item to remove the string set attribute entirely
         response = dynamodb.update_item(
             TableName='cloud-resume-visitor-count',
             Key={

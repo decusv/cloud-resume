@@ -19,13 +19,7 @@
   },
   "homepage": "https://github.com/decusv/cloud-resume#readme",
   "description": "",
-  "lint-staged": {
-    "*.py": [
-      "black",
-      "git add"
-    ]
-  },
   "devDependencies": {
-    "lint-staged": "^15.2.11"
+    "husky": "^4.3.8"
   }
 }
