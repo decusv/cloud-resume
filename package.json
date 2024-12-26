@@ -1,0 +1,31 @@
+{
+  "name": "cloud-resume",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decusv/cloud-resume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/decusv/cloud-resume/issues"
+  },
+  "homepage": "https://github.com/decusv/cloud-resume#readme",
+  "description": "",
+  "lint-staged": {
+    "*.py": [
+      "black",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "lint-staged": "^15.2.11"
+  }
+}
