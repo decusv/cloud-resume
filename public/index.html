@@ -292,10 +292,32 @@
       // Initialize the visitor counter when the page loads
       window.addEventListener("load", initVisitorCounter);
 
+      let tooltipTimeout; // Declare a variable to hold the timeout reference
+
       document.querySelector(".hint").addEventListener("click", function () {
         const tooltip = document.querySelector(".tooltip");
-        tooltip.style.display =
-          tooltip.style.display === "block" ? "none" : "block";
+        
+        // If the tooltip is currently displayed, hide it
+        if (tooltip.style.display === "block") {
+          tooltip.style.opacity = 0; // Start fade out
+          setTimeout(() => {
+            tooltip.style.display = "none"; // Hide after fade out
+          }, 500); // Match this with the CSS transition duration
+        } else {
+          tooltip.style.display = "block"; // Show the tooltip
+          tooltip.style.opacity = 1; // Reset opacity
+
+          // Clear the existing timeout if it exists
+          clearTimeout(tooltipTimeout);
+
+          // Add a timeout to hide the tooltip after 8 seconds
+          tooltipTimeout = setTimeout(() => {
+            tooltip.style.opacity = 0; // Start fade out
+            setTimeout(() => {
+              tooltip.style.display = "none"; // Hide after fade out
+            }, 500); // Match this with the CSS transition duration
+          }, 8000);
+        }
       });
 
       // Optional: Hide tooltip when clicking outside
