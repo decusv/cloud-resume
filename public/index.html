@@ -202,6 +202,97 @@
       .hint:focus + .tooltip {
         display: block;
       }
+
+      .cv-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 100;
+        overflow-y: auto;
+      }
+
+      .cv-container {
+        position: relative;
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 40px;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 20px;
+        color: #fff;
+      }
+
+      .close-cv {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 101;
+      }
+
+      .cv-section {
+        margin-bottom: 30px;
+      }
+
+      .cv-section h2 {
+        font-family: "Geist", sans-serif;
+        font-weight: 140;
+        color: hsl(0 0% 98%);
+        margin-bottom: 15px;
+        mix-blend-mode: difference;
+      }
+
+      .cv-item {
+        margin-bottom: 20px;
+        padding-left: 20px;
+        border-left: 2px solid #4dffbf;
+      }
+
+      .cv-item h3 {
+        color: #eec32d;
+        margin-bottom: 5px;
+      }
+
+      .cv-item .period {
+        color: #709ab9;
+        font-size: 0.9em;
+        margin-bottom: 10px;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+        margin-top: 15px;
+      }
+
+      .skill-item {
+        background: rgba(77, 255, 191, 0.1);
+        padding: 8px 15px;
+        border-radius: 15px;
+        text-align: center;
+      }
+
+      @media (max-width: 600px) {
+        .cv-container {
+          padding: 20px;
+          margin: 20px;
+        }
+      }
+
+      .skill-category {
+        margin-bottom: 20px;
+      }
+      
+      .skill-category h4 {
+        color: #eec32d;
+        margin-bottom: 10px;
+      }
     </style>
   </head>
   <body>
@@ -242,6 +333,139 @@
       </div>
     </div>
 
+    <div class="cv-overlay">
+      <div class="close-cv">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="cv-container">
+        <div class="cv-section">
+          <h2>About Me</h2>
+          <div class="cv-item">
+            <p>I am fueled by my insatiable curiosity for technology, I am a highly motivated and results-driven expert in the field of technology with a passion for exploring practical business applications. My dedication to constantly learn and grow in my field has led me to develop a strong skill set and an ambitious drive to succeed in any challenge that comes my way.</p>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h2>Experience</h2>
+          <div class="cv-item">
+            <h3>Technical Implementation Consultant</h3>
+            <div class="period">July 2021 - Present • OneTrust</div>
+            <ul>
+              <li>Assessed technical feasibility of complex solutions, led solution design, and supported custom statements of work for professional services.</li>
+              <li>Assisted leading organizations in various industries with privacy compliance needs, including DSAR automation in accordance with GDPR.</li>
+              <li>Integrated various third-party platforms including BitSight, LeanIX, ServiceNow, Adobe, Apigee, Genesys and MailChimp.</li>
+              <li>Designed and executed data transformation workflows and ETL processes.</li>
+              <li>Developed expertise in REST and SOAP APIs, utilizing tools like Postman and Power Automate.</li>
+              <li>Led technical training sessions and supported onboarding of new consultants.</li>
+              <li>Developed technical certification program and authored documentation.</li>
+            </ul>
+          </div>
+
+          <div class="cv-item">
+            <h3>Software Developer</h3>
+            <div class="period">November 2019 - January 2020 • Royal Holloway University of London</div>
+            <p>Developed front-end graphical user interface for data visualization software.</p>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h2>Education</h2>
+          <div class="cv-item">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <div class="period">2018 - 2021 • Royal Holloway University of London</div>
+            <p>First Class Honours</p>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h2>Notable Projects</h2>
+          <div class="cv-item">
+            <h3>Serverless Resume Website</h3>
+            <p>Architected and deployed a serverless web application using AWS services including Lambda, DynamoDB, and CloudFront. Implemented CI/CD pipeline using GitHub Actions and Cypress for automated testing. Utilized IAM roles, AWS SSO, and API Gateway for secure access management and API handling. Demonstrated practical knowledge of cloud architecture, infrastructure as code, and DevOps practices.</p>
+          </div>
+          <div class="cv-item">
+            <h3>3D-Printed Robotic Arm</h3>
+            <p>Assembled a six-axis robotic arm using stepper motors and Arduino with CNC shields. Integrated Hall effect sensors and modified designs using CAD software.</p>
+          </div>
+          <div class="cv-item">
+            <h3>Programming Language Interpreter</h3>
+            <p>Developed a Java-based interpreter for the Lox programming language, implementing software language engineering principles.</p>
+          </div>
+          <div class="cv-item">
+            <h3>Restaurant Booking System</h3>
+            <p>Led development of React-based interfaces as Scrum Master, managing team progress and stakeholder communications.</p>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h2>Certifications</h2>
+          <div class="skills-grid">
+            <div class="skill-item">AWS Certified Cloud Practitioner</div>
+            <div class="skill-item">Google Digital Marketing</div>
+            <div class="skill-item">EFSET English Certificate</div>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h2>Technical Skills</h2>
+          
+          <div class="skill-category">
+            <h4>Integration & APIs</h4>
+            <div class="skills-grid">
+              <div class="skill-item">REST APIs</div>
+              <div class="skill-item">SOAP APIs</div>
+              <div class="skill-item">Postman</div>
+              <div class="skill-item">Power Automate</div>
+              <div class="skill-item">Apache FreeMarker</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4>Data & ETL</h4>
+            <div class="skills-grid">
+              <div class="skill-item">ETL Pipeline Design</div>
+              <div class="skill-item">Data Transformation</div>
+              <div class="skill-item">Workflow Automation</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4>Development</h4>
+            <div class="skills-grid">
+              <div class="skill-item">Python</div>
+              <div class="skill-item">Java</div>
+              <div class="skill-item">Git</div>
+              <div class="skill-item">CI/CD</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4>Hardware & Robotics</h4>
+            <div class="skills-grid">
+              <div class="skill-item">Robotics</div>
+              <div class="skill-item">Microcontrollers</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h2>Awards & Recognition</h2>
+          <div class="cv-item">
+            <h3>OneTrust</h3>
+            <ul>
+              <li>Technical Rockstar Award</li>
+              <li>Customer First Award</li>
+            </ul>
+          </div>
+          <div class="cv-item">
+            <h3>Royal Holloway, University of London</h3>
+            <div class="period">2020</div>
+            <p>Best Team Project</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
       const API_URL =
         "https://8kvo99fqbb.execute-api.eu-west-2.amazonaws.com/cloud-resume-visitor-counter";
@@ -271,23 +495,23 @@
 
       function downloadCV(event) {
         event.preventDefault();
-        // Replace this URL with your actual API endpoint
-        const apiUrl = "https://api.example.com/download-cv";
-
-        fetch(apiUrl)
-          .then((response) => response.blob())
-          .then((blob) => {
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement("a");
-            a.style.display = "none";
-            a.href = url;
-            a.download = "Tomas_Riabovas_CV.pdf";
-            document.body.appendChild(a);
-            a.click();
-            window.URL.revokeObjectURL(url);
-          })
-          .catch((error) => console.error("Error downloading CV:", error));
+        const overlay = document.querySelector('.cv-overlay');
+        overlay.style.display = 'block';
+        document.body.style.overflow = 'hidden';
       }
+
+      document.querySelector('.close-cv').addEventListener('click', () => {
+        const overlay = document.querySelector('.cv-overlay');
+        overlay.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      });
+
+      document.querySelector('.cv-overlay').addEventListener('click', (e) => {
+        if (e.target === document.querySelector('.cv-overlay')) {
+          document.querySelector('.cv-overlay').style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
+      });
 
       // Initialize the visitor counter when the page loads
       window.addEventListener("load", initVisitorCounter);
