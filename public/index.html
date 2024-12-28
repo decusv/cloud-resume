@@ -293,6 +293,26 @@
         color: #eec32d;
         margin-bottom: 10px;
       }
+
+      .cv-item ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .cv-item ul li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 8px;
+        line-height: 1.4;
+      }
+
+      .cv-item ul li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #4dffbf; /* Matches your border color */
+        opacity: 0.7;
+      }
     </style>
   </head>
   <body>
@@ -341,7 +361,7 @@
         <div class="cv-section">
           <h2>About Me</h2>
           <div class="cv-item">
-            <p>I am fueled by my insatiable curiosity for technology, I am a highly motivated and results-driven expert in the field of technology with a passion for exploring practical business applications. My dedication to constantly learn and grow in my field has led me to develop a strong skill set and an ambitious drive to succeed in any challenge that comes my way.</p>
+            <p>Driven by an insatiable curiosity for technology, I thrive on solving complex challenges. I combine technical precision with creative problem-solving to deliver impactful results, constantly pushing the boundaries of what's possible with the technology I work with.</p>
           </div>
         </div>
 
@@ -352,12 +372,12 @@
             <div class="period">July 2021 - Present • OneTrust</div>
             <ul>
               <li>Assessed technical feasibility of complex solutions, led solution design, and supported custom statements of work for professional services.</li>
-              <li>Assisted leading organizations in various industries with privacy compliance needs, including DSAR automation in accordance with GDPR.</li>
-              <li>Integrated various third-party platforms including BitSight, LeanIX, ServiceNow, Adobe, Apigee, Genesys and MailChimp.</li>
+              <li>Built and implemented automations for privacy rights management, asset discovery, assessment workflows, and vendor risk management processes across various industries</li>
+              <li>Integrated various third-party platforms including BitSight, LeanIX, ServiceNow, Adobe, Apigee, Genesys and MailChimp among others.</li>
               <li>Designed and executed data transformation workflows and ETL processes.</li>
               <li>Developed expertise in REST and SOAP APIs, utilizing tools like Postman and Power Automate.</li>
               <li>Led technical training sessions and supported onboarding of new consultants.</li>
-              <li>Developed technical certification program and authored documentation.</li>
+              <li>Developed a technical certification program and authored other technical documentation.</li>
             </ul>
           </div>
 
@@ -381,15 +401,28 @@
           <h2>Notable Projects</h2>
           <div class="cv-item">
             <h3>Serverless Resume Website</h3>
-            <p>Architected and deployed a serverless web application using AWS services including Lambda, DynamoDB, and CloudFront. Implemented CI/CD pipeline using GitHub Actions and Cypress for automated testing. Utilized IAM roles, AWS SSO, and API Gateway for secure access management and API handling. Demonstrated practical knowledge of cloud architecture, infrastructure as code, and DevOps practices.</p>
+            <ul>
+              <li>Architected and deployed a serverless web application using AWS services including Lambda, DynamoDB, and CloudFront</li>
+              <li>Implemented CI/CD pipeline using GitHub Actions and Cypress for automated testing</li>
+              <li>Utilized IAM roles, AWS SSO, and API Gateway for secure access management and API handling</li>
+              <li>Demonstrated practical knowledge of cloud architecture, infrastructure as code, and DevOps practices</li>
+            </ul>
           </div>
           <div class="cv-item">
             <h3>3D-Printed Robotic Arm</h3>
-            <p>Assembled a six-axis robotic arm using stepper motors and Arduino with CNC shields. Integrated Hall effect sensors and modified designs using CAD software.</p>
+            <ul>
+              <li>Built a six-axis robotic arm using NEMA stepper motors, servo gripper, and Arduino MEGA 2560</li>
+              <li>Integrated KY-0003 Hall Effect sensors for precise position tracking and movement control</li>
+            </ul>
           </div>
           <div class="cv-item">
             <h3>Programming Language Interpreter</h3>
-            <p>Developed a Java-based interpreter for the Lox programming language, implementing software language engineering principles.</p>
+            <ul>
+              <li>Developed a custom programming language interpreter using ANTLR4 for lexical analysis and parsing</li>
+              <li>Designed and implemented a context-free grammar supporting variables, boolean operations, and arithmetic expressions</li>
+              <li>Built an Abstract Syntax Tree (AST) walker to evaluate expressions and manage variable scope</li>
+              <li>Created function declaration and invocation system with parameter passing and return value handling</li>
+            </ul>
           </div>
           <div class="cv-item">
             <h3>Restaurant Booking System</h3>
