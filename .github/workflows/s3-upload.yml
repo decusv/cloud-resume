@@ -4,6 +4,8 @@ on: push
 
 permissions:
   contents: read
+  id-token : write ## needed to generate the JWT token for OIDC
+
 
 jobs:
   upload:
@@ -16,8 +18,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          role-to-assume: arn:aws:iam::160885289344:role/OIDC_Cloud_Resume_Github_Actions_Permission
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Upload file to S3
