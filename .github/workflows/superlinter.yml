@@ -1,9 +1,6 @@
 name: Lint Code Base
 
-on:
-  push:
-    branches:
-      - main # Change this to your default branch
+on: push
 
 permissions:
   contents: read
@@ -24,4 +21,4 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          EXCLUDE: 'cypress/**'
+          EXCLUDE: "cypress/**"
