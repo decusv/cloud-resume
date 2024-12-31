@@ -34,6 +34,11 @@ jobs:
           git config --local commit.gpgSign true
           git config --local user.signingkey ${{ secrets.GPG_KEY_ID }}
 
+      - name: Import GPG Private Key
+        run: |
+          echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --import
+          gpg --list-secret-keys
+
       - name: Commit and Push Zipped Files
         run: |
           git add AWS/lambda/zipped/*.zip
