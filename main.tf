@@ -28,7 +28,9 @@ resource "aws_cloudfront_origin_access_control" "website" {
   signing_protocol                  = "sigv4"  # Choose the signing protocol
 }
 
-# S3 bucket for website files
+# Terraform Resource
+# AWS S3 Bucket 
+# Holds the website content that is served to users via a CDN.
 resource "aws_s3_bucket" "website-bucket" {
   bucket = var.bucket_name
 }
