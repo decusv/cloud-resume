@@ -4,8 +4,7 @@ on: push
 
 permissions:
   contents: read
-  id-token : write ## needed to generate the JWT token for OIDC
-
+  id-token: write ## needed to generate the JWT token for OIDC
 
 jobs:
   upload:

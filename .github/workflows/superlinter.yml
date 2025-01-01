@@ -12,9 +12,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4.2.2
-        with:
-          fetch-depth: 1
-
       - name: Super-Linter
         uses: super-linter/super-linter@v7.1.0
         env:

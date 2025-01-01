@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -52,8 +52,9 @@
           #4dffbf 288.0000042915344deg,
           hsla(0, 0%, 98%, 1) 1turn
         );
-        mask: radial-gradient(circle at 50% 50%, white 2px, transparent 2.5px)
-            50% 50% / var(--size) var(--size),
+        mask:
+          radial-gradient(circle at 50% 50%, white 2px, transparent 2.5px) 50%
+            50% / var(--size) var(--size),
           url("https://assets.codepen.io/605876/noise-mask.png") 256px 50% /
             256px 256px;
         mask-composite: intersect;
@@ -110,7 +111,9 @@
       .social-links a {
         color: #fff;
         font-size: 1.8em;
-        transition: color 0.3s ease, transform 0.3s ease;
+        transition:
+          color 0.3s ease,
+          transform 0.3s ease;
       }
 
       .social-links a:hover {
@@ -126,7 +129,9 @@
 
       @keyframes flicker {
         to {
-          mask-position: 50% 50%, 0 50%;
+          mask-position:
+            50% 50%,
+            0 50%;
         }
       }
 
@@ -288,7 +293,7 @@
       .skill-category {
         margin-bottom: 20px;
       }
-      
+
       .skill-category h4 {
         color: #eec32d;
         margin-bottom: 10px;
@@ -361,7 +366,13 @@
         <div class="cv-section">
           <h2>About Me</h2>
           <div class="cv-item">
-            <p>Driven by an insatiable curiosity for technology, I thrive on solving complex challenges. I combine technical precision with creative problem-solving to deliver impactful results, constantly pushing the boundaries of what's possible with the technology I work with.</p>
+            <p>
+              Driven by an insatiable curiosity for technology, I thrive on
+              solving complex challenges. I combine technical precision with
+              creative problem-solving to deliver impactful results, constantly
+              pushing the boundaries of what's possible with the technology I
+              work with.
+            </p>
           </div>
         </div>
 
@@ -371,20 +382,49 @@
             <h3>Technical Implementation Consultant</h3>
             <div class="period">July 2021 - Present • OneTrust</div>
             <ul>
-              <li>Assessed technical feasibility of complex solutions, led solution design, and supported custom statements of work for professional services.</li>
-              <li>Built and implemented automations for privacy rights management, asset discovery, assessment workflows, and vendor risk management processes across various industries</li>
-              <li>Integrated various third-party platforms including BitSight, LeanIX, ServiceNow, Adobe, Apigee, Genesys and MailChimp among others.</li>
-              <li>Designed and executed data transformation workflows and ETL processes.</li>
-              <li>Developed expertise in REST and SOAP APIs, utilizing tools like Postman and Power Automate.</li>
-              <li>Led technical training sessions and supported onboarding of new consultants.</li>
-              <li>Developed a technical certification program and authored other technical documentation.</li>
+              <li>
+                Assessed technical feasibility of complex solutions, led
+                solution design, and supported custom statements of work for
+                professional services.
+              </li>
+              <li>
+                Built and implemented automations for privacy rights management,
+                asset discovery, assessment workflows, and vendor risk
+                management processes across various industries
+              </li>
+              <li>
+                Integrated various third-party platforms including BitSight,
+                LeanIX, ServiceNow, Adobe, Apigee, Genesys and MailChimp among
+                others.
+              </li>
+              <li>
+                Designed and executed data transformation workflows and ETL
+                processes.
+              </li>
+              <li>
+                Developed expertise in REST and SOAP APIs, utilizing tools like
+                Postman and Power Automate.
+              </li>
+              <li>
+                Led technical training sessions and supported onboarding of new
+                consultants.
+              </li>
+              <li>
+                Developed a technical certification program and authored other
+                technical documentation.
+              </li>
             </ul>
           </div>
 
           <div class="cv-item">
             <h3>Software Developer</h3>
-            <div class="period">November 2019 - January 2020 • Royal Holloway University of London</div>
-            <p>Developed front-end graphical user interface for data visualization software.</p>
+            <div class="period">
+              November 2019 - January 2020 • Royal Holloway University of London
+            </div>
+            <p>
+              Developed front-end graphical user interface for data
+              visualization software.
+            </p>
           </div>
         </div>
 
@@ -392,7 +432,9 @@
           <h2>Education</h2>
           <div class="cv-item">
             <h3>Bachelor of Science in Computer Science</h3>
-            <div class="period">2018 - 2021 • Royal Holloway University of London</div>
+            <div class="period">
+              2018 - 2021 • Royal Holloway University of London
+            </div>
             <p>First Class Honours</p>
           </div>
         </div>
@@ -402,31 +444,64 @@
           <div class="cv-item">
             <h3>Serverless Resume Website</h3>
             <ul>
-              <li>Architected and deployed a serverless web application using AWS services including Lambda, DynamoDB, and CloudFront</li>
-              <li>Implemented CI/CD pipeline using GitHub Actions and Cypress for automated testing</li>
-              <li>Utilized IAM roles, AWS SSO, and API Gateway for secure access management and API handling</li>
-              <li>Demonstrated practical knowledge of cloud architecture, infrastructure as code, and DevOps practices</li>
+              <li>
+                Architected and deployed a serverless web application using AWS
+                services including Lambda, DynamoDB, and CloudFront
+              </li>
+              <li>
+                Implemented CI/CD pipeline using GitHub Actions and Cypress for
+                automated testing
+              </li>
+              <li>
+                Utilized IAM roles, AWS SSO, and API Gateway for secure access
+                management and API handling
+              </li>
+              <li>
+                Demonstrated practical knowledge of cloud architecture,
+                infrastructure as code, and DevOps practices
+              </li>
             </ul>
           </div>
           <div class="cv-item">
             <h3>3D-Printed Robotic Arm</h3>
             <ul>
-              <li>Built a six-axis robotic arm using NEMA stepper motors, servo gripper, and Arduino MEGA 2560</li>
-              <li>Integrated KY-0003 Hall Effect sensors for precise position tracking and movement control</li>
+              <li>
+                Built a six-axis robotic arm using NEMA stepper motors, servo
+                gripper, and Arduino MEGA 2560
+              </li>
+              <li>
+                Integrated KY-0003 Hall Effect sensors for precise position
+                tracking and movement control
+              </li>
             </ul>
           </div>
           <div class="cv-item">
             <h3>Programming Language Interpreter</h3>
             <ul>
-              <li>Developed a dynamically typed programming language interpreter using ANTLR4 for lexical analysis and parsing</li>
-              <li>Implemented a grammar supporting variables, boolean operations, and arithmetic expressions</li>
-              <li>Built an Abstract Syntax Tree (AST) walker to evaluate expressions and manage variable scope</li>
-              <li>Created function declaration and invocation system with parameter passing and return value handling</li>
+              <li>
+                Developed a dynamically typed programming language interpreter
+                using ANTLR4 for lexical analysis and parsing
+              </li>
+              <li>
+                Implemented a grammar supporting variables, boolean operations,
+                and arithmetic expressions
+              </li>
+              <li>
+                Built an Abstract Syntax Tree (AST) walker to evaluate
+                expressions and manage variable scope
+              </li>
+              <li>
+                Created function declaration and invocation system with
+                parameter passing and return value handling
+              </li>
             </ul>
           </div>
           <div class="cv-item">
             <h3>Restaurant Booking System</h3>
-            <p>Led development of React-based interfaces as Scrum Master, managing team progress and stakeholder communications.</p>
+            <p>
+              Led development of React-based interfaces as Scrum Master,
+              managing team progress and stakeholder communications.
+            </p>
           </div>
         </div>
 
@@ -441,7 +516,7 @@
 
         <div class="cv-section">
           <h2>Technical Skills</h2>
-          
+
           <div class="skill-category">
             <h4>Integration &amp; APIs</h4>
             <div class="skills-grid">
@@ -528,21 +603,21 @@
 
       function downloadCV(event) {
         event.preventDefault();
-        const overlay = document.querySelector('.cv-overlay');
-        overlay.style.display = 'block';
-        document.body.style.overflow = 'hidden';
+        const overlay = document.querySelector(".cv-overlay");
+        overlay.style.display = "block";
+        document.body.style.overflow = "hidden";
       }
 
-      document.querySelector('.close-cv').addEventListener('click', () => {
-        const overlay = document.querySelector('.cv-overlay');
-        overlay.style.display = 'none';
-        document.body.style.overflow = 'auto';
+      document.querySelector(".close-cv").addEventListener("click", () => {
+        const overlay = document.querySelector(".cv-overlay");
+        overlay.style.display = "none";
+        document.body.style.overflow = "auto";
       });
 
-      document.querySelector('.cv-overlay').addEventListener('click', (e) => {
-        if (e.target === document.querySelector('.cv-overlay')) {
-          document.querySelector('.cv-overlay').style.display = 'none';
-          document.body.style.overflow = 'auto';
+      document.querySelector(".cv-overlay").addEventListener("click", (e) => {
+        if (e.target === document.querySelector(".cv-overlay")) {
+          document.querySelector(".cv-overlay").style.display = "none";
+          document.body.style.overflow = "auto";
         }
       });
 
@@ -553,7 +628,7 @@
 
       document.querySelector(".hint").addEventListener("click", function () {
         const tooltip = document.querySelector(".tooltip");
-        
+
         // If the tooltip is currently displayed, hide it
         if (tooltip.style.display === "block") {
           tooltip.style.opacity = 0; // Start fade out
