@@ -205,3 +205,25 @@ resource "aws_lambda_permission" "allow_apigateway" {
   source_arn    = "${aws_apigatewayv2_api.website.execution_arn}/*/*"
 }
 
+
+resource "aws_signer_signing_profile" "lambda_signer" {
+  platform_id = "AWSLambda-SHA384-ECDSA"
+
+  signature_validity_period {
+    value = 135
+    type  = "MONTHS"
+  }
+}
+
+resource "aws_lambda_code_signing_config" "lambda_signer_config" {
+  allowed_publishers {
+    signing_profile_version_arns = [
+      aws_signer_signing_profile.lambda_signer.version_arn
+    ]
+  }
+
+    policies {
+    untrusted_artifact_on_deployment = "Enforce"
+  }
+
+}
