@@ -89,7 +89,7 @@
       }
 
       .profile-pic:hover {
-        transform: scale(1.05);
+        transform: scale(1.04);
       }
 
       h1 {
@@ -331,6 +331,13 @@
       <h1>Tomas Riabovas</h1>
       <div class="social-links">
         <a
+        href="https://techtomic.tech"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+      <i class="fa-solid fa-globe"></i>
+      </a>
+        <a
           href="https://github.com/decusv"
           target="_blank"
           rel="noopener noreferrer"
@@ -344,7 +351,7 @@
         >
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="#" onclick="downloadCV(event)">
+        <a href="#" onclick="renderCVOverlay(event)">
           <i class="fas fa-file-alt"></i>
         </a>
       </div>
@@ -446,13 +453,13 @@
             <ul>
               <li>
                 Architected and deployed a serverless web application using AWS
-                services including Lambda, DynamoDB, and CloudFront
+                services including Lambda, EventBridge, DynamoDB, and CloudFront
               </li>
               <li>
-                Utilized Terraform to set up the current infrastructure as code.
+                Utilized Terraform to set up the current infrastructure as code and deploy it via AWS SDK.
               </li>
               <li>
-                Implemented S3 for hosting the website and configured Route 53
+                Implemented S3 for static hosting the website and configured Route 53
                 for DNS management, including settings to enable TLS for secure
                 access.
               </li>
@@ -462,7 +469,7 @@
               </li>
               <li>
                 Utilized IAM roles, AWS SSO, AWS API Gateway for secure access
-                management and API handling as well AWS signer for code-signing
+                management and API handling as well AWS Signer for code-signing
                 Lambda functions.
               </li>
             </ul>
@@ -606,7 +613,7 @@
         countElement.textContent = count;
       }
 
-      function downloadCV(event) {
+      function renderCVOverlay(event) {
         event.preventDefault();
         const overlay = document.querySelector(".cv-overlay");
         overlay.style.display = "block";
