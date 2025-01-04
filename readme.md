@@ -94,7 +94,7 @@ This project involves the architecture and deployment of a serverless web applic
 <!-- CONTACT -->
 ## Contact
 
-Tomas Riabovas - [@linkedin_username](https://www.linkedin.com/in/tomas-riabovas-584251182/) - tmriaboovas@gmail.com
+Tomas Riabovas - [@linkedin_url](https://www.linkedin.com/in/tomas-riabovas-584251182/) - tmriaboovas@gmail.com
 
 Project Link: [https://github.com/decusv/cloud-resume](https://github.com/decusv/cloud-resume)
 
@@ -106,7 +106,7 @@ Project Link: [https://github.com/decusv/cloud-resume](https://github.com/decusv
 ## Acknowledgments
 
 * Forrest Brazeal - For creating The Cloud Resume Challenge
-* [https://github.com/othneildrew/](Othneil Drew - The Best Readme Template)
+* [Othneil Drew - The Best Readme Template] (https://github.com/othneildrew/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
