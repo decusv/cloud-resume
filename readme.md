@@ -96,7 +96,7 @@ Project Link: [https://github.com/decusv/cloud-resume](https://github.com/decusv
 ## Acknowledgments
 
 * Forrest Brazeal - For creating The Cloud Resume Challenge
-* [Othneil Drew - The Best Readme Template] (https://github.com/othneildrew/)
+* Othneil Drew - For the best readme template (https://github.com/othneildrew/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
