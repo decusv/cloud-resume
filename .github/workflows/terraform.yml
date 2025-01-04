@@ -20,7 +20,7 @@ jobs:
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v2
       with:
-        role-to-assume: ${{ secrets.AWS_IAM_ASSUME_ROLE }}
+        role-to-assume: ${{ secrets.AWS_IAM_ASSUME_ROLE_TERRAFORM }}
 
         aws-region: ${{ secrets.AWS_REGION }}
 
