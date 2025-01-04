@@ -40,16 +40,6 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -94,7 +84,7 @@ This project involves the architecture and deployment of a serverless web applic
 <!-- CONTACT -->
 ## Contact
 
-Tomas Riabovas - [@linkedin_url](https://www.linkedin.com/in/tomas-riabovas-584251182/) - tmriaboovas@gmail.com
+Tomas Riabovas - [Linked In](https://www.linkedin.com/in/tomas-riabovas-584251182/) - tmriabovas@gmail.com
 
 Project Link: [https://github.com/decusv/cloud-resume](https://github.com/decusv/cloud-resume)
 
