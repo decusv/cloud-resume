@@ -64,7 +64,15 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://tmriabovas.tech)
 
-Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
+This project involves the architecture and deployment of a serverless web application using various AWS services.
+
+### Key components include:
+
+- [ ] AWS Lambda, EventBridge, DynamoDB, and CloudFront for serverless computing, event-driven workflows, and content delivery.
+- [ ] Terraform for infrastructure as code, automating the deployment via AWS SDK.
+- [ ] Amazon S3 for static website hosting and Route 53 for DNS management, with TLS enabled for secure access.
+- [ ] CI/CD pipeline built with GitHub Actions, incorporating Grype and GitHub CodeQL for vulnerability scanning.
+- [ ] IAM roles, AWS SSO, API Gateway for secure access management, and AWS Signer for code-signing Lambda functions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,10 +85,9 @@ Use this space to show useful examples of how a project can be used. Additional 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Add AWS WAF
+- [ ] Set-up a verified bot for automated signed commits in GitHub Actions
+- [ ] Automate SBOM generation.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -101,9 +108,8 @@ Project Link: [https://github.com/decusv/cloud-resume](https://github.com/decusv
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* Forrest Brazeal - For creating The Cloud Resume Challenge
+* [https://github.com/othneildrew](Othneil Drew - The Best Readme Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
