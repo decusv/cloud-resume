@@ -39,3 +39,4 @@ terraform.rc
 variables.tf
 import.tf
 .cursorrules
+terraform-org.tf

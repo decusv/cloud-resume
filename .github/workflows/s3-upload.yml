@@ -17,7 +17,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: arn:aws:iam::160885289344:role/OIDC_Cloud_Resume_Github_Actions_Permission
+          role-to-assume: ${{ secrets.AWS_IAM_ASSUME_ROLE }}
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Upload file to S3
