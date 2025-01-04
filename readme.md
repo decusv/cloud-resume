@@ -68,15 +68,12 @@ This project involves the architecture and deployment of a serverless web applic
 
 ### Key components include:
 
+
 - [ ] AWS Lambda, EventBridge, DynamoDB, and CloudFront for serverless computing, event-driven workflows, and content delivery.
 - [ ] Terraform for infrastructure as code, automating the deployment via AWS SDK.
 - [ ] Amazon S3 for static website hosting and Route 53 for DNS management, with TLS enabled for secure access.
 - [ ] CI/CD pipeline built with GitHub Actions, incorporating Grype and GitHub CodeQL for vulnerability scanning.
 - [ ] IAM roles, AWS SSO, API Gateway for secure access management, and AWS Signer for code-signing Lambda functions.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,7 +106,7 @@ Project Link: [https://github.com/decusv/cloud-resume](https://github.com/decusv
 ## Acknowledgments
 
 * Forrest Brazeal - For creating The Cloud Resume Challenge
-* [https://github.com/othneildrew](Othneil Drew - The Best Readme Template)
+* [https://github.com/othneildrew/](Othneil Drew - The Best Readme Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
