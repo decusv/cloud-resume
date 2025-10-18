@@ -28,6 +28,20 @@ describe("LinkedIn Icon Interaction", () => {
   });
 });
 
+describe("Techtomic Icon Interaction", () => {
+  it("verifies the Techtomic link without navigating", () => {
+    cy.visit("https://techtomic.tech", {
+      timeout: 10000,
+    });
+
+    cy.contains('a', 'https://techtomic.tech')
+      .should("exist")
+      .should("be.visible")
+      .invoke("attr", "href")
+      .should("equal", "https://techtomic.tech"); // Replace with the expected URL
+  });
+});
+
 describe("Profile Icon and Visitor Count Interaction", () => {
   it("verifies the profile icon is loading and the number of visitors is displayed", () => {
     cy.visit("http://tmriabovas.tech", {
@@ -46,3 +60,4 @@ describe("Profile Icon and Visitor Count Interaction", () => {
       .and("not.be.empty"); // Ensure it's not empty
   });
 });
+
